@@ -63,9 +63,9 @@ void handleNewMessages(int numNewMessages) {
     String from_name = bot.messages[i].from_name;
 
     if (text == "/start") {
-      String welcome = "Bienvenido camarada " + from_name + ".\n";
-      welcome += "Usa los siguientes comandos para conquistar Ucrania:\n\n";
-      welcome += "/measure mostrar el estado actual de tu planta \n";
+      String welcome = "Welcome, " + from_name + ".\n";
+      welcome += "Please, use the following commands:\n\n";
+      welcome += "/measure Show the current state of your plant \n";
       bot.sendMessage(chat_id, welcome, "");
     }
     if (text == "/measure") {
